@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre mim</title>
+    <style>
+         .texto-centro {
+    text-align: center; /* A mágica acontece aqui */
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+        /*colocando uma animação*/
+        @keyframes surgir {
+            from{
+                opacity: 0;
+                transform: translatey(45px); /*serve para que a animação começe uma determinada quantidade de px abaixo*/
+            }
+            to{
+                opacity: 1;
+                transform: translatey(0px) /*serve para que a animação volte para o local original*/
+            }
+        }
+
+        .titulo-animado {
+        font-family: Arial, sans-serif;
+        font-size: 3.75rem;
+        color: #26c0e7;
+        text-align: center;
+        margin-top: 50px;
+
+        animation: surgir 2.5s ease-out forwards;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo-animado">
+        <strong>Eu sempre gostei de programação e por isso estou estou no curso de informática para aprender ao maximo sobre, atualmente estou com o objetivo de participar de alguns projetos e desenvolver minhas ideias com pequenos projetos pessoais para entender melhor os conceitos da programação.</strong>
+    </h1>
+</body>
+</html>

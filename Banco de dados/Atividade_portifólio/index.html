@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <style>
+        
+
+        .texto-centro {
+    text-align: center; /* A mágica acontece aqui */
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+        /*colocando uma animação*/
+        @keyframes surgir {
+            from{
+                opacity: 0;
+                transform: translatey(45px); /*serve para que a animação começe uma determinada quantidade de px abaixo*/
+            }
+            to{
+                opacity: 1;
+                transform: translatey(0px) /*serve para que a animação volte para o local original*/
+            }
+        }
+
+        .titulo-animado {
+        font-family: Arial, sans-serif;
+        font-size: 3.75rem;
+        color: #26c0e7;
+        text-align: center;
+        margin-top: 50px;
+
+        animation: surgir 2.5s ease-out forwards;
+        
+
+        }
+        .container-links {
+    display: flex;
+    justify-content: center; /* Centraliza a fileira na tela */
+    gap: 30px;               /* Distância entre um link e outro */
+    margin-top: 40px;
+}
+
+/* Ajuste para o link não ocupar a largura toda da tela */
+.link-estilizado {
+    text-decoration: none;
+    display: inline-block;
+}
+       
+    </style>
+    <style> /*--isso muda a cor de fundo do site */
+    body {
+  background-color: #000000;
+}
+    .link-efeito {
+            /* Estilo visual básico */
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #6200ee;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-weight: bold;
+
+            /* A "mágica" para o efeito ser suave */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        }
+
+        /* O efeito acontece aqui */
+        .link-efeito:hover {
+            transform: scale(1.1); /* Fica maior */
+            filter: brightness(1.3); /* Fica mais iluminado */
+            box-shadow: 0 0 20px rgba(98, 0, 238, 0.6); /* Brilho em volta */
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="titulo-animado"><strong>Óla, eu me chamo Emmanuel Viana</strong></h1>
+    <h2  class="titulo-animado" class="texto-centro" style="color: rgb(121, 115, 115); font-family: Comic-sans, sans-serif; font-size: 45px;">
+  <strong> Programador Iniciante </strong></h2>
+  <h4 class="titulo-animado" class="texto-centro" style="color: rgb(255, 255, 255); font-family: Comic-sans, sans-serif; font-size: 30px;"><strong> Eu sou um estudante do ensino médio que está aprendendo sobre programação, tenho pouca experiência na área mas aprendo rapido, um dos meus objetivos e trabalhar em Big techs como Google e Microsoft.</strong></h4>
+  
+</a>
+
+<div class="container-links">
+    
+    <a href="Hobbies.html" class="titulo-animado link-estilizado" style="font-size: 48px; color: #26c0e7;">
+        <strong>Hobbies</strong>
+    </a>
+
+    <a href="sobre.html" class="titulo-animado link-estilizado" style="font-size: 48px; color: #26c0e7;">
+        <strong>Mais</strong>
+    </a>
+
+    <a href="sonhos.html" class="titulo-animado link-estilizado" style="font-size: 48px; color: #26c0e7;">
+        <strong>Sonhos</strong>
+    </a>
+
+    <a href="Hobbies.html" class="titulo-animado link-estilizado" style="font-size: 48px; color: #26c0e7;">
+        <strong>Hobbies</strong>
+         
+        <a href="#" class="titulo-animado link-estilizado" style="font-size: 48px; color: #26c0e7;" class="link-efeito">Passe o mouse aqui</a>
+    </a>
+
+</div>
+</body>
+</html>
