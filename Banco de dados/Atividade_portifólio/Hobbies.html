@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <style>
+
+        .texto-centro {
+    text-align: center; /* A mágica acontece aqui */
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+        /*colocando uma animação*/
+        @keyframes surgir {
+            from{
+                opacity: 0;
+                transform: translatey(45px); /*serve para que a animação começe uma determinada quantidade de px abaixo*/
+            }
+            to{
+                opacity: 1;
+                transform: translatey(0px) /*serve para que a animação volte para o local original*/
+            }
+        }
+
+        .titulo-animado {
+        font-family: Arial, sans-serif;
+        font-size: 3.75rem;
+        color: #26c0e7;
+        text-align: center;
+        margin-top: 50px;
+
+        animation: surgir 2.5s ease-out forwards;
+        
+
+        }
+        body {
+  background-color: #000000;
+} 
+    </style>
+</head>
+<body>
+     <h2  class="titulo-animado" class="texto-centro" style="color: rgb(255, 255, 255); font-family: Comic-sans, sans-serif; font-size: 65px;">
+  <strong>meus hobbies geralmente envolvem pesquisar algo se eu achar interessante eu aprendo o maximo posssivel sobre, atualmente onde eu mais tenho feito isso e no mundo automotivo
+ </strong></h2>
+</body>
+</html>
